@@ -1,0 +1,48 @@
+# 🚀 QR Shorten Pro - Backend (Go API)
+
+API Service yang dibangun menggunakan Go Fiber untuk memperpendek URL, generate QR Code ke Cloudinary, dan tracking analytics.
+
+## 🛠 Tech Stack
+
+- **Language:** Go 1.21+
+- **Framework:** Fiber v2
+- **ORM:** GORM
+- **Database:** PostgreSQL
+- **Auth:** Google OAuth2 & JWT
+- **Cloud Storage:** Cloudinary (untuk QR Code)
+
+## 📦 Features
+
+- URL Shortening dengan NanoID.
+- Click Tracking (Atomically incremented).
+- Cloudinary Upload integration.
+- Protected Routes menggunakan JWT Middleware.
+- CORS Configured untuk integrasi Frontend.
+
+## 🚀 Setup & Installation
+
+1. **Clone Repository:**
+
+   ```bash
+   git clone [https://github.com/username/qr-shorten-go.git](https://github.com/username/qr-shorten-go.git)
+   cd qr-shorten-go
+
+   ```
+
+2. **Setup .env: Buat file .env di root folder:**
+   ```bash
+   DB_URL=postgres://user:pass@localhost:5432/dbname
+   GOOGLE_CLIENT_SECRET=xxx
+   GOOGLE_CLIENT_ID=xxx
+   JWT_SECRET=your_jwt_secret
+   CLOUDINARY_CLOUD_NAME=xxx
+   CLOUDINARY_API_KEY=xxx
+   CLOUDINARY_API_SECRET=xxx
+   FRONTEND_URL=http://localhost:3000
+
+   ```
+3. **Run Application:**
+   ```bash
+   go mod tidy
+   go run main.go
+   ```
