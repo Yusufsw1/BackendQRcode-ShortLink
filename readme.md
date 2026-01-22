@@ -29,7 +29,7 @@ API Service built using Go Fiber to shorten URLs, generate QR Codes to Cloudinar
 
    ```
 
-2. **Setup .env: Buat file .env di root folder:**
+2. **Setup .env: Create files .env in root folder:**
 
    ```bash
    DB_URL=postgres://user:pass@localhost:5432/dbname
