@@ -1,30 +1,30 @@
 # 🚀 QR Shorten Pro - Backend (Go API)
 
-API Service built using Go Fiber to shorten URLs, generate QR Codes to Cloudinary, and track analytics.
+A high-performance API service built with Go Fiber to shorten URLs, generate QR Codes via Cloudinary integration, and track real-time analytics.
 
 ## 🛠 Tech Stack
 
 - **Language:** Go 1.21+
-- **Framework:** Fiber v2
-- **ORM:** GORM
+- **Framework:** [Fiber v2](https://gofiber.io/)
+- **ORM:** [GORM](https://gorm.io/)
 - **Database:** PostgreSQL
-- **Auth:** Google OAuth2 & JWT
-- **Cloud Storage:** Cloudinary (for QR Code)
+- **Auth:** Google OAuth2 & JWT (JSON Web Tokens)
+- **Cloud Storage:** [Cloudinary](https://cloudinary.com/) (For QR Code image hosting)
 
-## 📦 Features
+## 📦 Key Features
 
-- URL Shortening with NanoID.
-- Click Tracking (Atomically incremented).
-- Cloudinary Upload integration.
-- Protected Routes using JWT Middleware.
-- CORS Configured for Frontend integration.
+- **Dynamic Shortening:** Generates unique 8-character codes using NanoID.
+- **Atomic Click Tracking:** Increments click counts directly in the database to prevent race conditions.
+- **QR Code Generation:** Automatically generates QR codes for every shortened link and uploads them to the cloud.
+- **Protected Endpoints:** Secure routes using custom JWT Middleware.
+- **CORS Enabled:** Fully configured for seamless integration with modern frontend frameworks.
 
 ## 🚀 Setup & Installation
 
-1. **Clone Repository:**
+1. **Clone the Repository:**
 
    ```bash
-   git clone [https://github.com/username/qr-shorten-go.git](https://github.com/username/qr-shorten-go.git)
+   git clone [https://github.com/yourusername/qr-shorten-go.git](https://github.com/yourusername/qr-shorten-go.git)
    cd qr-shorten-go
 
    ```
